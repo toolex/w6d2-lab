@@ -19,4 +19,10 @@ Decorator.prototype.roomPaintable = function (room) {
   return this.paintLitres() >= room.area; // Remember no implicxit returns
 };
 
+Decorator.prototype.paintRoom = function (room) {
+  if (this.roomPaintable(room)) {
+     room.isPainted()//Not working not sure why 
+   };
+};
+
 module.exports = Decorator;

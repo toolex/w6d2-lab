@@ -25,7 +25,3 @@ describe("Paint Can", function () {
     const actual = paint_can2.fullness
     assert.strictEqual(actual, 0)
   });
-
-  it("should")
-
-});

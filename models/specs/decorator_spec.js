@@ -37,4 +37,14 @@ describe("Decorator", function(){
     assert.deepStrictEqual(decorator.roomPaintable(room), true)
   })
 
+  it("should be able to change the rooms painted state after using roomPaintable", function () {
+    decorator.addPaint(paint_can1)
+    decorator.addPaint(paint_can2)
+    decorator.paintRoom(room)
+    assert.strictEqual(room.painted, true)
+  });
+
+});
+
+
 });
