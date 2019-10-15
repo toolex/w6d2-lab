@@ -9,4 +9,9 @@ describe("Paint Can", function () {
     paint_can = new PaintCan(20, true)
   });
 
+  it("should have a number of litres of paint", function(){
+    const actual = paint_can.capacity
+    assert.strictEqual(actual, 20)
+  });
+
 });
